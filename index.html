@@ -1,0 +1,1051 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Tue Jun 24 2025 10:51:38 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="684fa138a5013c49c6c4e369" data-wf-site="684fa138a5013c49c6c4e31c" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Greyslate</title>
+  <meta content="No Realtors. No Fees. No Repairs. FAST &amp; EASY! Just Call Us or Fill In The Form For Your FREE Cash Offer Today!" name="description">
+  <meta content="Greyslate" property="og:title">
+  <meta content="No Realtors. No Fees. No Repairs. FAST &amp; EASY! Just Call Us or Fill In The Form For Your FREE Cash Offer Today!" property="og:description">
+  <meta content="https://cdn.prod.website-files.com/684fa138a5013c49c6c4e31c/68564e880dd8fe7d91849ec5_Untitled-2.jpg" property="og:image">
+  <meta content="Greyslate" property="twitter:title">
+  <meta content="No Realtors. No Fees. No Repairs. FAST &amp; EASY! Just Call Us or Fill In The Form For Your FREE Cash Offer Today!" property="twitter:description">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/greyslate-web.webflow.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v3.0.1/mapbox-gl.css' rel='stylesheet' />
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script>
+  <link rel="stylesheet"
+    href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css">
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic"]  }});</script>
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.jpg" rel="apple-touch-icon">
+  <style>
+.page-wrapper {
+  opacity: 0;
+  animation: fadeIn 0.25s ease-out forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="global-styles w-embed"><!--  Phosphor regular icons  -->
+      <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+      <style>
+/* Make text look crisper and more legible in all browsers */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* Focus state style for keyboard navigation for the focusable elements */
+*[tabindex]:focus-visible,
+  input[type="file"]:focus-visible {
+   outline: 0.125rem solid #4d65ff;
+   outline-offset: 0.125rem;
+}
+/* Set color style to inherit */
+.inherit-color * {
+    color: inherit;
+}
+/* Get rid of top margin on first element in any rich text element */
+.w-richtext > :not(div):first-child, .w-richtext > div:first-child > :first-child {
+  margin-top: 0 !important;
+}
+/* Get rid of bottom margin on last element in any rich text element */
+.w-richtext>:last-child, .w-richtext ol li:last-child, .w-richtext ul li:last-child {
+	margin-bottom: 0 !important;
+}
+/* Make sure containers never lose their center alignment */
+.container-medium,.container-small, .container-large {
+	margin-right: auto !important;
+  margin-left: auto !important;
+}
+/* 
+Make the following elements inherit typography styles from the parent and not have hardcoded values. 
+Important: You will not be able to style for example "All Links" in Designer with this CSS applied.
+Uncomment this CSS to use it in the project. Leave this message for future hand-off.
+*/
+/*
+a,
+.w-input,
+.w-select,
+.w-tab-link,
+.w-nav-link,
+.w-dropdown-btn,
+.w-dropdown-toggle,
+.w-dropdown-link {
+  color: inherit;
+  text-decoration: inherit;
+  font-size: inherit;
+}
+*/
+/* Apply "..." after 3 lines of text */
+.text-style-3lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+}
+/* Apply "..." after 2 lines of text */
+.text-style-2lines {
+	display: -webkit-box;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/* These classes are never overwritten */
+.hide {
+  display: none !important;
+}
+@media screen and (max-width: 991px) {
+    .hide, .hide-tablet {
+        display: none !important;
+    }
+}
+  @media screen and (max-width: 767px) {
+    .hide-mobile-landscape{
+      display: none !important;
+    }
+}
+  @media screen and (max-width: 479px) {
+    .hide-mobile{
+      display: none !important;
+    }
+}
+.margin-0 {
+  margin: 0rem !important;
+}
+.padding-0 {
+  padding: 0rem !important;
+}
+.spacing-clean {
+padding: 0rem !important;
+margin: 0rem !important;
+}
+.margin-top {
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-top {
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-right {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-right {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-bottom {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-bottom {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+.margin-left {
+  margin-top: 0rem !important;
+  margin-right: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-left {
+  padding-top: 0rem !important;
+  padding-right: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-horizontal {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.padding-horizontal {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.margin-vertical {
+  margin-right: 0rem !important;
+  margin-left: 0rem !important;
+}
+.padding-vertical {
+  padding-right: 0rem !important;
+  padding-left: 0rem !important;
+}
+
+
+
+.contact-input-icon {
+    width: 20px;
+    height: 20px;
+    background: #666;
+    border-radius: 2px;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.contact-input-box {
+    position: relative;
+}
+
+/* Make the geocoder container look exactly like your input */
+#geocoder-contact-address-2.contact-input.w-input {
+    padding-left: 45px !important; /* Space for icon */
+    padding-right: 12px !important;
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    border: 1px solid #ebf9f9;
+    border-radius: 10px;
+    background: #fff !important;
+    transition: border-color 0.2s ease !important; /* Smooth transition */
+}
+
+/* Active and Focus states - same as your existing contact-input */
+#geocoder-contact-address-2.contact-input.w-input:active,
+#geocoder-contact-address-2.contact-input.w-input:focus,
+#geocoder-contact-address-2.contact-input.w-input:focus-within {
+  border-color: #8fa598;
+  outline: none !important;
+}
+
+.contact-input.w-input .mapboxgl-ctrl-geocoder {
+    width: 100% !important;
+    max-width: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    font-family: inherit !important;
+    height: 100% !important;
+}
+
+.contact-input.w-input .mapboxgl-ctrl-geocoder--input {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    border: none !important;
+    background: transparent !important;
+    font-family: inherit !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    outline: none !important;
+}
+
+/* Focus state for the input itself */
+.contact-input.w-input .mapboxgl-ctrl-geocoder--input:focus {
+    outline: none !important;
+}
+
+.mapboxgl-ctrl-geocoder--input::placeholder {
+    color: #04161366 !important;
+    opacity: 1 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+
+/* Remove geocoder visual elements */
+.contact-input.w-input .mapboxgl-ctrl-geocoder--icon,
+.contact-input.w-input .mapboxgl-ctrl-geocoder--button {
+    display: none !important;
+}
+</style>
+    </div>
+    <div data-animation="default" class="navbar_component w-nav" data-easing2="ease" fs-scrolldisable-element="smart-nav" data-easing="ease" data-collapse="medium" data-w-id="c406ca79-d8dd-ac01-84ae-a3099c215e05" role="banner" data-duration="400">
+      <div class="navbar_container">
+        <a href="#" class="brand w-nav-brand"><img width="57" sizes="(max-width: 1279px) 57px, (max-width: 1439px) 4vw, 57px" alt="" src="images/greyslate.png" loading="lazy" srcset="images/greyslate-p-500.png 500w, images/greyslate.png 1024w" class="logo"></a>
+        <nav role="navigation" class="navbar_menu is-page-height-tablet w-nav-menu">
+          <div class="navbar_menu-links">
+            <a href="#mission" class="navbar_link w-nav-link">About Us</a>
+            <a href="#team" class="navbar_link w-nav-link">Contact</a>
+            <a href="#stats" class="navbar_link w-nav-link">Review</a>
+            <a href="#footer" class="navbar_link w-nav-link">FAQ</a>
+          </div>
+          <div class="navbar_menu-buttons">
+            <div class="button-container">
+              <a href="#team" data-w-id="d8320b4a-f38b-3ef4-1d77-8da40d08c0e4" class="key-primary ghost-white w-inline-block">
+                <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text">gET MY FREE OFFER</div>
+                <div class="button-text absolute white">GET MY FREE OFFER</div>
+                <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="button-hover-circle"></div>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="navbar_menu-button w-nav-button">
+          <div class="menu-icon1">
+            <div class="menu-icon1_line-top"></div>
+            <div class="menu-icon1_line-middle">
+              <div class="menu-icon1_line-middle-inner"></div>
+            </div>
+            <div class="menu-icon1_line-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main-wrapper">
+      <section class="hero-section-2">
+        <div class="background-image-2"><img sizes="(max-width: 1439px) 100vw, 1440px" srcset="images/638e36747668db7cce88ee1a_Rectangle-1-1-1-p-500.png 500w, images/638e36747668db7cce88ee1a_Rectangle-1-1-1-p-800.png 800w, images/638e36747668db7cce88ee1a_Rectangle-1-1-1-p-1080.png 1080w, images/638e36747668db7cce88ee1a_Rectangle-1-1-1-1.png 1440w" alt="background image
+" src="images/638e36747668db7cce88ee1a_Rectangle-1-1-1-1.png" loading="lazy" class="image-2"></div>
+        <div class="main-container-2">
+          <div class="hero-wrapper-2">
+            <div class="hero-split-2">
+              <div data-w-id="e517e36b-6cc6-d431-517c-7adaa0da9154" style="opacity:0" class="icon-data-box-2"><img src="images/Logo2.png" loading="lazy" sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/Logo2-p-500.png 500w, images/Logo2-p-800.png 800w, images/Logo2.png 1024w" alt="" class="image-4"></div>
+              <h1 data-w-id="e517e36b-6cc6-d431-517c-7adaa0da9159" style="opacity:0" class="hero-heading">Sell Your House Fast for Cash — No Fees, No Repairs, No Hassle</h1>
+              <p data-w-id="e517e36b-6cc6-d431-517c-7adaa0da915b" style="opacity:0" class="small-heading-2">Skip the agents, paperwork, and delays. Get a fair, no-obligation cash offer on your home — no matter where you live. We buy houses in any condition, nationwide. </p>
+              <div data-w-id="5a0f6f6e-4ffb-8825-9b63-92a4afc8be9c" style="opacity:0" class="button-container">
+                <a href="#team" data-w-id="5a0f6f6e-4ffb-8825-9b63-92a4afc8be9d" class="key-primary ghost-white w-inline-block">
+                  <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text">gET MY FREE OFFER</div>
+                  <div class="button-text absolute white">GET MY FREE OFFER</div>
+                  <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="button-hover-circle"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mission" animation-container="text-fade-in" class="section_mission">
+        <section class="about-us-section">
+          <div class="main-container-3">
+            <div class="about-us-wrapper">
+              <div data-w-id="8417fecc-38fe-3e8f-76c0-82749da1de1c" style="opacity:0" class="about-us-data">
+                <div class="small-heading-3 color">About Us</div>
+                <h2 class="about-us-heading">Trusted Home Buyers Helping Families Sell Nationwide</h2>
+                <p class="about-us-des">With over <strong>1,000 homes purchased</strong> and years of experience, Greyslate helps homeowners across the U.S. sell quickly, easily, and without agent fees. Whether you&#x27;re facing foreclosure, inherited a property, or just want to sell fast — we’ve got you covered.</p>
+              </div>
+              <div class="w-layout-grid about-card-grid">
+                <div id="w-node-_8417fecc-38fe-3e8f-76c0-82749da1de27-c6c4e369" data-w-id="8417fecc-38fe-3e8f-76c0-82749da1de27" style="opacity:0" class="about-us-card">
+                  <div class="smail-icon"></div>
+                  <h2 class="about-us-card-heading">98<span class="text-span-2">%</span></h2>
+                  <div class="about-card-des">Positive Feedback</div>
+                </div>
+                <div id="w-node-_8417fecc-38fe-3e8f-76c0-82749da1de30-c6c4e369" data-w-id="8417fecc-38fe-3e8f-76c0-82749da1de30" style="opacity:0" class="about-us-card">
+                  <div class="card-home-icon"></div>
+                  <h2 class="about-us-card-heading">25+</h2>
+                  <div class="about-card-des">Years of Experience</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="copy-this-entire-section">
+        <div class="w-layout-blockcontainer main-container-6 w-container">
+          <div class="brand-logo-wrapper">
+            <div class="client-logo-slider-wrapper">
+              <div class="client-logo-slider">
+                <div class="items"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/Realtor.com_logo-p-500.png 500w, images/Realtor.com_logo-p-800.png 800w, images/Realtor.com_logo.png 949w" alt="Brnad Logo" src="images/Realtor.com_logo.png" loading="eager" class="item"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/Airbnb_Logo_Bélo.svg-p-500.png 500w, images/Airbnb_Logo_Bélo.svg-p-800.png 800w, images/Airbnb_Logo_Bélo.svg-p-1080.png 1080w, images/Airbnb_Logo_Bélo.svg-p-1600.png 1600w, images/Airbnb_Logo_Bélo.svg-p-2000.png 2000w, images/Airbnb_Logo_Bélo.svg.png 2560w" alt="Brnad Logo" src="images/Airbnb_Logo_Bélo.svg.png" loading="eager" class="item"><img loading="eager" src="images/682d30e49733f1378acd0d96_z-logo-default-visual-refresh.svg" alt="Brnad Logo" class="item"><img loading="eager" src="images/Turner_Construction_logo.svg" alt="Brnad Logo" class="item"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 783px" srcset="images/Greystar_Real_Estate_Partners_logo-p-500.png 500w, images/Greystar_Real_Estate_Partners_logo.png 783w" alt="Brnad Logo" src="images/Greystar_Real_Estate_Partners_logo.png" loading="eager" class="item"><img loading="eager" src="images/682d30e49733f1378acd0d96_z-logo-default-visual-refresh.svg" alt="Brnad Logo" class="item"><img loading="eager" src="images/cash-home-buyer-bbb-reviews-a_plus-acc-400x111.webp" alt="Brnad Logo" class="item"></div>
+                <div class="items"><img loading="eager" src="images/Turner_Construction_logo.svg" alt="Brnad Logo" class="item"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/Airbnb_Logo_Bélo.svg-p-500.png 500w, images/Airbnb_Logo_Bélo.svg-p-800.png 800w, images/Airbnb_Logo_Bélo.svg-p-1080.png 1080w, images/Airbnb_Logo_Bélo.svg-p-1600.png 1600w, images/Airbnb_Logo_Bélo.svg-p-2000.png 2000w, images/Airbnb_Logo_Bélo.svg.png 2560w" alt="Brnad Logo" src="images/Airbnb_Logo_Bélo.svg.png" loading="eager" class="item"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/Realtor.com_logo-p-500.png 500w, images/Realtor.com_logo-p-800.png 800w, images/Realtor.com_logo.png 949w" alt="Brnad Logo" src="images/Realtor.com_logo.png" loading="eager" class="item"><img loading="eager" src="images/cash-home-buyer-bbb-reviews-a_plus-acc-400x111.webp" alt="Brnad Logo" class="item"></div>
+              </div>
+              <div class="css-code w-embed">
+                <style>
+.client-logo-slider {
+  animation: moveSlideshow 20s linear infinite;
+}
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-50.8%);  
+  }
+}
+</style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="empower" class="section_empower">
+        <section class="about-service-section">
+          <div class="w-layout-blockcontainer main-container-5 w-container">
+            <div class="about-service-title-wrap">
+              <h2 data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a37" style="opacity:0" class="section-heading">SELL YOUR HOME IN THREE SIMPLE STEPS</h2>
+              <p data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a39" style="opacity:0" class="section-description max">Tired of the hassle of traditional home selling? Dozens of homeowners like you have chosen our stress-free, cash-offer solution. Here’s how it works:<br></p>
+            </div>
+            <div class="about-service-grid">
+              <div id="w-node-a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a3c-c6c4e369" data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a3c" style="opacity:0" class="about-service-box">
+                <div class="about-service-box-wrapper">
+                  <div class="about-serivce-icon">
+                    <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" x="0" y="0" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                          <lineargradient id="a" x1="256" x2="256" y1="501.593" y2="10.407" gradientunits="userSpaceOnUse">
+                            <stop stop-opacity="1" stop-color="#195774" offset="0"></stop>
+                            <stop stop-opacity="1" stop-color="#195774" offset="1"></stop>
+                          </lineargradient>
+                          <path fill="url(#a)" d="M477.95 279.16h-83.53v-75.48l29.86 21.77c3.57 2.6 8.57 1.82 11.17-1.74l27.18-37.2a7.992 7.992 0 0 0 1.44-5.95 8.022 8.022 0 0 0-3.19-5.23L236.82 11.94a7.998 7.998 0 0 0-9.43 0l-46.81 34.13V34.54c0-4.42-3.58-8-8-8h-86c-4.42 0-8 3.58-8 8v33.92c0 4.42 3.58 8 8 8h4.81v34.63l-88.1 64.23c-1.72 1.25-2.86 3.13-3.19 5.23s.19 4.24 1.45 5.95l27.18 37.2a8.007 8.007 0 0 0 11.18 1.74l29.89-21.79v211.97c0 4.42 3.58 8 8 8l273.93.42v61.54h-18.56c-4.42 0-8 3.58-8 8s3.58 8 8 8h79.79c4.42 0 8-3.58 8-8s-3.58-8-8-8h-18.53v-61.54h83.53c18.77 0 34.05-15.26 34.05-34.02v-76.86c-.01-18.74-15.28-34-34.06-34zm-110.23 0V264.7h10.7v14.46zM94.58 42.54h70v15.19l-3.74 2.72H94.58zm12.81 33.92h31.51l-31.51 22.97zM36.93 207.81l-17.74-24.28L232.1 28.31 445 183.53l-17.74 24.28L236.82 68.96a7.998 7.998 0 0 0-9.43 0zm48.86-15.82L232.1 85.32 378.42 192v56.68h-18.7c-4.42 0-8 3.58-8 8v22.46H293.6v-28.69c0-4.42-3.58-8-8-8H178.62c-4.42 0-8 3.58-8 8v157.16H85.79zm153.27 215.64h-52.44V258.47h90.98v20.69h-9.4c-18.77 0-34.05 15.26-34.05 34.02v76.86a33.693 33.693 0 0 0 4.91 17.59zm139.36 77.96h-10.7v-61.54h10.7zM496 390.03c0 9.93-8.1 18.02-18.05 18.02l-213.62-.42c-8.1-1.77-14.19-8.98-14.19-17.59v-76.86c0-9.93 8.1-18.02 18.05-18.02h209.76c9.95 0 18.05 8.08 18.05 18.02zm-51.66-54.22v7.81h15.56c4.42 0 8 3.58 8 8s-3.58 8-8 8h-15.56v7.78h15.56c4.42 0 8 3.58 8 8s-3.58 8-8 8h-23.56c-4.42 0-8-3.58-8-8v-47.59c0-4.42 3.58-8 8-8h23.56c4.42 0 8 3.58 8 8s-3.58 8-8 8zm-84.74-10.99a8 8 0 0 0-14.84 0l-19.19 47.59c-1.65 4.1.33 8.76 4.43 10.41.98.4 1.99.58 2.99.58 3.17 0 6.17-1.89 7.42-5.01l1.92-4.76H362l1.91 4.75c1.65 4.1 6.31 6.08 10.41 4.43s6.08-6.31 4.43-10.41zm-10.82 32.81 3.39-8.42 3.39 8.42zm76.76 17.77c0 4.42-3.58 8-8 8h-23.58c-4.42 0-8-3.58-8-8v-47.59c0-4.42 3.58-8 8-8s8 3.58 8 8v39.59h15.58c4.42 0 8 3.58 8 8zm-102.18-12.48c-.05 10.07-8.61 20.48-22.86 20.48-9.48 0-16.43-2.83-20.64-8.42-2.66-3.53-1.96-8.54 1.57-11.2s8.54-1.96 11.2 1.57c.99 1.31 3.85 2.06 7.87 2.06 4.98 0 6.85-2.8 6.86-4.56.01-2.33-3.58-3.19-6.65-3.22-15.53-.17-22.54-10.14-22.49-19.33.05-10.07 8.62-20.48 22.85-20.48 9.45 0 16.4 2.83 20.65 8.42 2.68 3.52 2 8.53-1.52 11.21s-8.53 2-11.21-1.52c-1.02-1.34-3.91-2.11-7.92-2.11-4.97 0-6.84 2.8-6.85 4.57-.01 2.34 3.58 3.21 6.65 3.24 15.51.13 22.54 10.09 22.49 19.29z" opacity="1" data-original="url(#a)" class=""></path>
+                        </g>
+                      </svg></div>
+                  </div>
+                  <div class="about-service-title">TELL US ABOUT YOUR PROPERTY</div>
+                  <p class="about-service-desc">Submit your address and info online or give us a quick call. We buy homes in any<strong> </strong>city and any condition.</p>
+                  <a href="#team" data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a44" class="key-primary w-inline-block">
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text">Lets Talk</div>
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text absolute">View More</div>
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="button-hover-circle"></div>
+                  </a>
+                </div>
+              </div>
+              <div id="w-node-a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a4a-c6c4e369" data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a4a" style="opacity:0" class="about-service-box">
+                <div class="about-service-box-wrapper">
+                  <div class="about-serivce-icon">
+                    <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" x="0" y="0" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                          <path d="M290.308 203.493c-23.443 0-42.515 19.072-42.515 42.516 0 23.442 19.072 42.515 42.515 42.515s42.515-19.072 42.515-42.515c0-23.444-19.073-42.516-42.515-42.516zm0 65.03c-12.415 0-22.515-10.1-22.515-22.515s10.1-22.516 22.515-22.516 22.515 10.101 22.515 22.516-10.1 22.515-22.515 22.515z" fill="#195774" opacity="1" data-original="#000000" class=""></path>
+                          <path d="m475.13 298.703 33.941-33.941c3.905-3.905 3.905-10.237 0-14.143l-56.923-56.923V94.254c0-5.522-4.477-10-10-10h-56c-5.523 0-10 4.478-10 10v23.442L314.35 55.897c-13.257-13.256-34.827-13.256-48.084 0L232.54 89.623C219.799 38.224 173.282.009 118 .009c-14.543 0-28.747 2.617-42.216 7.779-5.157 1.977-7.735 7.76-5.759 12.916 1.976 5.157 7.76 7.735 12.917 5.76 11.176-4.283 22.972-6.455 35.059-6.455 54.038 0 98 43.963 98 98s-43.962 98-98 98-98-43.963-98-98c0-12.086 2.171-23.879 6.452-35.052 1.976-5.157-.603-10.94-5.76-12.916-5.156-1.977-10.94.604-12.916 5.76C2.616 89.267 0 103.468 0 118.009c0 55.282 38.216 101.799 89.614 114.54l-18.07 18.07c-3.905 3.905-3.905 10.237 0 14.143l33.941 33.941a9.988 9.988 0 0 0 4.823 2.662v150.626h-18c-5.523 0-10 4.478-10 10v40c0 5.522 4.477 10 10 10h396c5.523 0 10-4.478 10-10v-40c0-5.522-4.477-10-10-10h-18V301.366a9.94 9.94 0 0 0 4.822-2.663zm-78.982-194.449h36v69.442l-36-36zM280.408 70.04c2.644-2.645 6.16-4.101 9.899-4.101s7.255 1.456 9.899 4.101l187.651 187.65-19.799 19.799-170.68-170.68c-3.906-3.904-10.237-3.904-14.143 0l-56.134 56.134c5.729-13.858 8.898-29.032 8.898-44.935 0-1.173-.022-2.34-.056-3.504zM92.757 257.69l21.738-21.738c1.165.034 2.332.056 3.505.056 15.903 0 31.077-3.169 44.935-8.898l-50.378 50.378zm385.551 234.301h-376v-20h376zm-150-40h-76v-118h76zm20 0v-128c0-5.522-4.477-10-10-10h-96c-5.523 0-10 4.478-10 10v128h-102V288.023l160-160 160 160v163.968z" fill="#195774" opacity="1" data-original="#000000" class=""></path>
+                          <path d="M117.509 151.232c-8.545.062-10.991-.329-17.457-4.559-4.623-3.024-10.819-1.727-13.843 2.894-3.023 4.622-1.728 10.82 2.894 13.843 7.224 4.726 12.579 6.687 19.024 7.425v3.109c0 5.523 4.478 10 10 10s10-4.477 10-10v-4.375c12.925-4.178 21.19-15.615 23.088-26.907 2.586-15.383-5.754-29.281-20.752-34.583-8.034-2.84-16.909-6.263-21.824-10.117-1.268-.995-1.812-3.492-1.325-6.073.254-1.344 1.434-5.834 5.962-7.195 8.457-2.538 16.075 2.872 16.152 2.927 4.429 3.297 10.664 2.36 13.962-2.068 3.266-4.384 2.324-10.624-1.99-13.949-2.831-2.115-7.552-4.678-13.274-6.201v-3.33c0-5.523-4.478-10-10-10s-10 4.477-10 10v3.298c-.202.057-.403.108-.605.169-10.192 3.062-17.802 11.736-19.86 22.638-1.902 10.073 1.406 19.852 8.635 25.521 7.172 5.625 17.456 9.686 27.501 13.237 8.033 2.84 8.27 8.995 7.695 12.411-.956 5.686-5.74 11.83-13.983 11.885z" fill="#195774" opacity="1" data-original="#000000" class=""></path>
+                          <circle cx="41.63" cy="41.642" r="10" fill="#195774" opacity="1" data-original="#000000" class=""></circle>
+                        </g>
+                      </svg></div>
+                  </div>
+                  <div class="about-service-title">GET A NO-OBLIGATION CASH OFFER</div>
+                  <p class="about-service-desc">Within 24 hours, we’ll send you a fair, no-pressure cash offer — no agent fees, no repairs needed.</p>
+                  <a href="#team" data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a52" class="key-primary w-inline-block">
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text">Lets Talk</div>
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text absolute">View More</div>
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="button-hover-circle"></div>
+                  </a>
+                </div>
+              </div>
+              <div id="w-node-a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a58-c6c4e369" data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a58" style="opacity:0" class="about-service-box">
+                <div class="about-service-box-wrapper">
+                  <div class="about-serivce-icon">
+                    <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" x="0" y="0" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                        <g>
+                          <path d="M492.264 228.066H350.581v-16.951c0-14.933-12.149-27.082-27.082-27.082-14.933 0-27.082 12.149-27.082 27.082v16.951H154.735c-10.203 0-18.622 7.782-19.634 17.722a20.033 20.033 0 0 0-.102 2.015v128.923c0 10.883 8.854 19.737 19.736 19.737h23.895v53.751H75.644V189.6L247.945 74.985l172.3 114.616v20.815a7.325 7.325 0 1 0 14.65 0v-11.07l22.201 14.768a24.906 24.906 0 0 0 27.655 0 24.913 24.913 0 0 0 11.138-20.787 24.91 24.91 0 0 0-11.138-20.785L255.039 19.734a12.776 12.776 0 0 0-14.187 0l-133.285 88.663a7.325 7.325 0 1 0 8.114 12.197L247.945 32.61l228.693 152.129c2.924 1.946 4.602 5.076 4.602 8.589s-1.678 6.643-4.602 8.589a10.291 10.291 0 0 1-11.427 0L255.039 62.108a12.776 12.776 0 0 0-14.187 0L30.678 201.917a10.291 10.291 0 0 1-11.426-.001c-2.925-1.945-4.602-5.075-4.602-8.588s1.677-6.643 4.602-8.589l58.535-38.938a7.325 7.325 0 1 0-8.114-12.197l-58.535 38.937C4.164 177.18 0 184.95 0 193.328s4.164 16.148 11.138 20.786a24.926 24.926 0 0 0 13.828 4.192 24.94 24.94 0 0 0 13.827-4.192l22.201-14.768v250.868H32.921c-12.187 0-22.101 9.915-22.101 22.101 0 12.187 9.914 22.101 22.101 22.101h430.048c12.187 0 22.101-9.915 22.101-22.101 0-12.187-9.914-22.101-22.101-22.101h-28.073v-36.103a7.325 7.325 0 1 0-14.65 0v36.103h-69.664v-53.751h141.682c10.883 0 19.736-8.854 19.736-19.737V247.803c0-10.883-8.854-19.737-19.736-19.737zm-181.197-16.951c0-6.855 5.577-12.432 12.432-12.432s12.432 5.577 12.432 12.432v16.951h-24.864v-16.951zm-14.65 268.651H32.921c-4.108 0-7.451-3.342-7.451-7.451s3.342-7.451 7.451-7.451h263.496v14.902zm0-29.552H193.28v-53.751h103.137v53.751zm39.514 29.552h-24.864v-83.304h24.864v83.304zm127.038-14.902c4.108 0 7.451 3.342 7.451 7.451s-3.342 7.451-7.451 7.451H350.581v-14.902h112.388zm29.295-83.051H154.735a5.091 5.091 0 0 1-5.086-5.087V247.803a5.092 5.092 0 0 1 5.086-5.086l337.529-.001a5.091 5.091 0 0 1 5.086 5.087v128.923a5.092 5.092 0 0 1-5.086 5.087z" fill="#195774" opacity="1" data-original="#000000"></path>
+                          <path d="M247.945 107.233c-25.445 0-46.146 20.701-46.146 46.146s20.701 46.147 46.146 46.147 46.146-20.701 46.146-46.147c0-25.444-20.701-46.146-46.146-46.146zm-7.325 76.773c-11.502-2.751-20.568-11.826-23.309-23.333h23.309v23.333zm0-37.983h-23.294c2.758-11.478 11.813-20.524 23.294-23.27v23.27zm14.65-23.27c11.482 2.746 20.537 11.793 23.294 23.27H255.27v-23.27zm0 61.253v-23.333h23.308c-2.74 11.507-11.806 20.581-23.308 23.333zM255.896 342.637l-13.906-25.792c7.96-2.441 13.904-9.022 13.904-21.229 0-16.876-11.251-22.182-25.155-22.182h-21.015c-2.653 0-4.458 2.017-4.458 4.245v68.991c0 2.866 3.502 4.352 6.899 4.352 3.502 0 6.899-1.486 6.899-4.352v-27.703h8.916l15.072 29.295c1.062 2.123 2.866 3.291 4.777 3.291 4.033 0 8.597-3.715 8.597-7.217 0-.424-.106-1.168-.53-1.699zm-25.157-34.495h-11.675v-22.608h11.675c6.9 0 11.357 2.972 11.357 11.357 0 8.386-4.458 11.251-11.357 11.251zM311.718 338.922H281.68v-21.335h16.133c2.972 0 4.352-2.865 4.352-5.307 0-2.865-1.593-5.52-4.352-5.52H281.68v-21.228h30.038v.002c2.759 0 4.352-2.866 4.352-6.157 0-2.865-1.38-5.943-4.352-5.943h-37.786c-3.078 0-6.05 1.486-6.05 4.352v68.884c0 2.866 2.972 4.352 6.05 4.352h37.786c2.972 0 4.352-3.079 4.352-5.944 0-3.291-1.593-6.156-4.352-6.156zM370.834 273.434c-3.502 0-6.899 1.273-6.899 4.245v42.668l-20.486-39.589c-3.29-6.263-5.307-7.324-10.295-7.324-3.502 0-6.899 1.38-6.899 4.352v68.884c0 2.866 3.396 4.352 6.899 4.352 3.396 0 6.899-1.486 6.899-4.352v-42.668l22.821 42.668c1.805 3.29 4.67 4.352 7.96 4.352 3.396 0 6.899-1.486 6.899-4.352v-68.99c0-2.972-3.502-4.246-6.899-4.246zM436.742 273.434h-44.897c-2.972 0-4.352 3.185-4.352 6.156 0 3.396 1.593 6.263 4.352 6.263h15.602v60.818c0 2.866 3.396 4.352 6.9 4.352 3.396 0 6.899-1.486 6.899-4.352v-60.818h15.496c2.759 0 4.351-2.972 4.351-6.263 0-2.971-1.379-6.156-4.351-6.156z" fill="#195774" opacity="1" data-original="#000000"></path>
+                        </g>
+                      </svg></div>
+                  </div>
+                  <div class="about-service-title">YOU PICK THE CLOSING DATE &amp; GET PAID</div>
+                  <p class="about-service-desc">We work on your timeline and close fast through a reputable title company — you get cash in hand, guaranteed<strong>.</strong></p>
+                  <a href="#team" data-w-id="a69aa3fc-07fd-6ee0-ba90-44ffeb9c9a60" class="key-primary w-inline-block">
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text">Lets Talk</div>
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="button-text absolute">View More</div>
+                    <div style="-webkit-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);display:none" class="button-hover-circle"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <header id="vision" class="section_vision background-color-gradient1">
+        <section class="section_marquee z-index-1">
+          <div class="marquee_component">
+            <div aria-hidden="true" class="marquee_inner-wrapper"></div>
+          </div>
+        </section>
+        <div class="vision_component">
+          <div class="padding-global">
+            <div class="container-small">
+              <div class="padding-top padding-large">
+                <div class="text-align-center">
+                  <div class="margin-bottom margin-small">
+                    <h2>Meet One Of The Local Home Buyers In Your Neighborhood</h2>
+                  </div>
+                  <p class="text-size-medium">Work directly with a friendly face in your area.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="vision_content-bottom">
+            <div class="vision_image-list">
+              <div id="w-node-ab5706e0-72bc-fed8-8742-962280f0208c-c6c4e369" class="vision_image-group-left">
+                <div class="vision_image-wrapper is-image-small"><img sizes="(max-width: 1000px) 100vw, 1000px" srcset="images/AdobeStock_188222999_Preview-p-500.jpeg 500w, images/AdobeStock_188222999_Preview-p-800.jpeg 800w, images/AdobeStock_188222999_Preview.jpeg 1000w" alt="" src="images/AdobeStock_188222999_Preview.jpeg" loading="eager" class="vision_image1"></div>
+                <div id="w-node-ab5706e0-72bc-fed8-8742-962280f0208f-c6c4e369" class="vision_small-image-group">
+                  <div class="vision_image-wrapper"><img sizes="(max-width: 579px) 100vw, 579px" srcset="images/hands-p-500.jpg 500w, images/hands.jpg 579w" alt="" src="images/hands.jpg" loading="eager" class="vision_image2"></div>
+                  <div class="vision_image-wrapper"><img sizes="(max-width: 725px) 100vw, 725px" srcset="images/625b10a58137b364b18df2ea_iStock-94179607-p-500.jpg 500w, images/625b10a58137b364b18df2ea_iStock-94179607.jpg 725w" alt="" src="images/625b10a58137b364b18df2ea_iStock-94179607.jpg" loading="eager" class="vision_image3"></div>
+                </div>
+              </div>
+              <div class="vision_image-wrapper is-image-large"><img sizes="(max-width: 1000px) 100vw, 1000px" srcset="images/AdobeStock_380103617_Preview-p-500.jpeg 500w, images/AdobeStock_380103617_Preview-p-800.jpeg 800w, images/AdobeStock_380103617_Preview.jpeg 1000w" alt="" src="images/AdobeStock_380103617_Preview.jpeg" loading="eager" class="vision_image4">
+                <div class="text-overlay-wrap text-color-secondary">
+                  <div class="padding-global">
+                    <div class="container-large">
+                      <h2 class="vision_overlay-text">25+ Years Of Experience</h2>
+                    </div>
+                  </div>
+                  <div class="dark_gradient"></div>
+                </div>
+              </div>
+              <div id="w-node-ab5706e0-72bc-fed8-8742-962280f02096-c6c4e369" class="vision_image-group-right">
+                <div id="w-node-ab5706e0-72bc-fed8-8742-962280f02097-c6c4e369" class="vision_small-image-group">
+                  <div class="vision_image-wrapper"><img sizes="(max-width: 667px) 100vw, 667px" srcset="images/AdobeStock_1080381600_Preview-p-500.jpeg 500w, images/AdobeStock_1080381600_Preview.jpeg 667w" alt="" src="images/AdobeStock_1080381600_Preview.jpeg" loading="eager" class="vision_image5"></div>
+                  <div class="vision_image-wrapper"><img sizes="(max-width: 552px) 100vw, 552px" srcset="images/volunteers-p-500.jpg 500w, images/volunteers.jpg 552w" alt="" src="images/volunteers.jpg" loading="eager" class="vision_image6"></div>
+                </div>
+                <div class="vision_image-wrapper is-image-small"><img sizes="(max-width: 736px) 100vw, 736px" srcset="images/vorunteer-p-500.jpg 500w, images/vorunteer.jpg 736w" alt="" src="images/vorunteer.jpg" loading="eager" class="vision_image7"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="team" class="section_team">
+        <section class="contact-page-contact-section">
+          <div class="w-layout-blockcontainer main-container-5 w-container">
+            <div class="contact-wrapper">
+              <div data-w-id="b19b6e2f-b68e-e12c-9114-2c0fd904d173" style="opacity:0" class="contact-image-box"></div>
+              <div class="contact-box">
+                <div data-w-id="b19b6e2f-b68e-e12c-9114-2c0fd904d175" style="opacity:0" class="contact-page-form-block w-form">
+                  <div class="contact-form-title">
+                    <div class="contact-title">
+                      <div class="section-heading-2">Ready for a free consultation?</div>
+                      <div class="section-description">Sell Your Home Fast – Get a No-Obligation Cash Offer in 24 Hours</div>
+                    </div>
+                    <div class="contact-form-icon">
+                      <div class="w-embed"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="auto" height="auto" x="0" y="0" viewbox="0 0 48 48" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+                          <g>
+                            <path d="M40 20h-6v-9c0-2.77-2.18-6-5-6H8a5 5 0 0 0-5 5v21a1 1 0 0 0 .62.92 1 1 0 0 0 .93-.09l4.82-3.21a3.66 3.66 0 0 1 2.05-.62H14v9a5 5 0 0 0 5 5h17.58a3.66 3.66 0 0 1 2.05.62l4.82 3.21A1 1 0 0 0 45 45V25a5 5 0 0 0-5-5ZM8.26 27 5 29.13V10a3 3 0 0 1 3-3h21c1.55 0 3 2.25 3 4v12a3 3 0 0 1-3 3H11.42a5.65 5.65 0 0 0-3.16 1ZM43 43.13 39.74 41a5.65 5.65 0 0 0-3.16-1H19a3 3 0 0 1-3-3v-9h21a1 1 0 0 0 0-2h-4a4.92 4.92 0 0 0 1-3v-1h6a3 3 0 0 1 3 3Z" fill="#195774" opacity="1" data-original="#000000" class=""></path>
+                            <path d="M11 14h15a1 1 0 0 0 0-2H11a1 1 0 0 0 0 2ZM11 18h15a1 1 0 0 0 0-2H11a1 1 0 0 0 0 2ZM20 21a1 1 0 0 0-1-1h-8a1 1 0 0 0 0 2h8a1 1 0 0 0 1-1ZM37 30H22a1 1 0 0 0 0 2h15a1 1 0 0 0 0-2ZM29 34h-7a1 1 0 0 0 0 2h7a1 1 0 0 0 0-2Z" fill="#195774" opacity="1" data-original="#000000" class=""></path>
+                          </g>
+                        </svg></div>
+                    </div>
+                  </div>
+                  <form id="contact-form" name="contact-form"
+                  action="http://localhost:5000/submit-form"
+                  data-name="Contact Form" method="post" class="contact-form" data-wf-page-id="684fa138a5013c49c6c4e369" data-wf-element-id="b19b6e2f-b68e-e12c-9114-2c0fd904d180">
+                    <div class="contact-field-wrapper"><label for="name" class="contact-field-title">Your name</label>
+                      <div class="contact-input-box">
+                        <div class="contact-input-icon"></div><input class="contact-input w-input" maxlength="256" name="contact-name-2" data-name="Contact Name 2" placeholder="Your name" type="text" id="contact-name-2" required="">
+                      </div>
+                    </div>
+                    <div class="contact-flex-field">
+                      <div class="contact-field-wrapper"><label for="name" class="contact-field-title">Email</label>
+                        <div class="contact-input-box"><input class="contact-input w-input" maxlength="256" name="contact-email-2" data-name="Contact Email 2" placeholder="Email" type="email" id="contact-email-2" required=""></div>
+                      </div>
+                      <div class="contact-field-wrapper"><label for="name" class="contact-field-title">Phone</label>
+                        <div class="contact-input-box"><input class="contact-input w-input" maxlength="256" name="contact-phone-2" data-name="Contact Phone 2" placeholder="Phone" type="tel" id="contact-phone-2" required=""></div>
+                      </div>
+                    </div>
+                    <div class="contact-field-wrapper">
+                      <label for="name" class="contact-field-title">Property Address</label>
+                      <div class="contact-input-box">
+                        <div class="contact-input-icon"></div>
+                        <div id="geocoder-contact-address-2" class="contact-input w-input"></div>
+                      </div>
+                    <div class="contact-field-wrapper"><label for="name" class="contact-field-title">Reason for selling</label>
+                      <div class="contact-input-box"><textarea id="contact-message-2" name="contact-message-2" maxlength="5000" data-name="Contact Message 2" placeholder="We never share your info. No pressure. Just a fair offer." class="contact-input ps w-input"></textarea></div>
+                    </div>
+                    <div class="contact-btn">
+                      <div class="button-container">
+                        <div data-w-id="b19b6e2f-b68e-e12c-9114-2c0fd904d1a5" class="submit-button"><input type="submit" data-wait="Please wait..." class="form-button padding-copy w-button" value="GET OFFER NOW">
+                          <div class="button-hover-circle"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="success-message w-form-done">
+                    <div class="success-msg">Thank you! Your submission has been received!</div>
+                  </div>
+                  <div class="w-form-fail">
+                    <div class="error-msg">Oops! Something went wrong while submitting the form.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="stats" class="section_stats">
+        <div class="padding-global z-index-2">
+          <div class="w-layout-blockcontainer main-container-5 w-container">
+            <div class="testimonials-wrapper">
+              <div class="properties-deta">
+                <div class="properties-heading-data">
+                  <h2 data-w-id="42ce87f6-aa34-7a63-de55-badc35c5cd7d" style="opacity:0" class="section-heading-3">What Our Clients Say</h2>
+                </div>
+              </div>
+            </div>
+            <div class="w-layout-hflex testimonials-data">
+              <div class="testimonials-img-box"><img sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" srcset="images/close-up-blurry-woman-sitting-p-500.jpg 500w, images/close-up-blurry-woman-sitting-p-800.jpg 800w, images/close-up-blurry-woman-sitting-p-1080.jpg 1080w, images/close-up-blurry-woman-sitting-p-1600.jpg 1600w, images/close-up-blurry-woman-sitting-p-2000.jpg 2000w, images/close-up-blurry-woman-sitting-p-2600.jpg 2600w, images/close-up-blurry-woman-sitting-p-3200.jpg 3200w, images/close-up-blurry-woman-sitting.jpg 3489w" alt="" src="images/close-up-blurry-woman-sitting.jpg" loading="lazy"></div>
+              <div class="w-layout-grid testimonials-grid">
+                <div id="w-node-_42ce87f6-aa34-7a63-de55-badc35c5cd85-c6c4e369" class="testimonials-card"><img id="w-node-_42ce87f6-aa34-7a63-de55-badc35c5cd86-c6c4e369" loading="lazy" alt="Star
+" src="images/Star.svg" class="testimoni-star-image">
+                  <p class="form-description black">I had to sell my home quickly, and Greyslate made it incredibly simple. They kept their word, offered a fair all-cash price, and closed faster than I expected. No surprises, no stress — just results. I highly recommend them to anyone needing a fast and honest sale.</p>
+                  <div class="testimonials-card-img-data">
+                    <div class="testimoni-text-data">Dana S – Cleveland, OH</div>
+                  </div>
+                </div>
+                <div id="w-node-_42ce87f6-aa34-7a63-de55-badc35c5cd8e-c6c4e369" class="testimonials-card"><img id="w-node-_42ce87f6-aa34-7a63-de55-badc35c5cd8f-c6c4e369" loading="lazy" alt="Star
+" src="images/Star.svg" class="testimoni-star-image">
+                  <p class="form-description black">When I was behind on payments and didn’t know what to do, Greyslate stepped in with a solution. They caught up what I owed and gave me cash to move forward. I truly felt like they cared — no pressure, just a straightforward offer that helped me out of a tough situation. I&#x27;m so glad I called them.</p>
+                  <div class="testimonials-card-img-data">
+                    <div class="testimoni-text-data">Cora B – Dallas, TX</div>
+                  </div>
+                </div>
+                <div id="w-node-_42ce87f6-aa34-7a63-de55-badc35c5cd97-c6c4e369" class="testimonials-card"><img id="w-node-_42ce87f6-aa34-7a63-de55-badc35c5cd98-c6c4e369" loading="lazy" alt="Star
+" src="images/Star.svg" class="testimoni-star-image">
+                  <p class="form-description black">I was nervous about selling, especially since I didn’t want the house sitting too long. Greyslate explained the process clearly and promised they’d line up a buyer first — and they actually did it faster than I expected. Everything they said, they delivered on. I felt heard, respected, and relieved to have it all taken care of.</p>
+                  <div class="testimonials-card-img-data">
+                    <div class="testimoni-text-data">Joselyn M – <br>Tampa, FL</div>
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="small-heading-5 center">See All Agents</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="footer_component background-color-gradient2">
+      <section class="section-home-faq">
+        <div class="section-padding padding-150x150">
+          <div class="container-small-2">
+            <div class="section-inner">
+              <div class="section-header home-faq">
+                <h2 data-w-id="d852e714-cf1d-f165-7bdb-1034edcd199e" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-8">Frequently Asked Question</h2>
+              </div>
+              <div class="section-content home-faq">
+                <div data-delay="0" data-hover="false" data-w-id="d852e714-cf1d-f165-7bdb-1034edcd19a1" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="faq-accordion w-dropdown">
+                  <div class="accordion-label w-dropdown-toggle">
+                    <div class="faq-label-title">What if I can&#x27;t move out by the time we close?</div>
+                    <div class="faq-label-icon">
+                      <div class="faq-icon-bar"></div>
+                      <div class="faq-icon-bar _2"></div>
+                    </div>
+                  </div>
+                  <nav class="accordion-pane w-dropdown-list">
+                    <p class="faq-accordion-details-text">If you need more time, we&#x27;ll do our best to accommodate you. For some of our clients, we&#x27;re able to advance them the deposit on their next lease or cover their moving expenses.</p>
+                  </nav>
+                </div>
+                <div data-delay="0" data-hover="false" data-w-id="d852e714-cf1d-f165-7bdb-1034edcd19ab" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="faq-accordion w-dropdown">
+                  <div class="accordion-label w-dropdown-toggle">
+                    <div class="faq-label-title">Can I sell my inherited home if there&#x27;s a disagreement among heirs?</div>
+                    <div class="faq-label-icon">
+                      <div class="faq-icon-bar"></div>
+                      <div class="faq-icon-bar _2"></div>
+                    </div>
+                  </div>
+                  <nav class="accordion-pane w-dropdown-list">
+                    <p class="faq-accordion-details-text">We do everything possible to facilitate an agreement that makes everyone involved happy, delivering the fairest results given your family history. We&#x27;ll work to negotiate an agreement between heirs before going to court, but if a court resolution is needed to close the estate then we can assist with legal expenses to accomplish this for you.</p>
+                  </nav>
+                </div>
+                <div data-delay="0" data-hover="false" data-w-id="d852e714-cf1d-f165-7bdb-1034edcd19b5" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="faq-accordion w-dropdown">
+                  <div class="accordion-label w-dropdown-toggle">
+                    <div class="faq-label-title">What if I don&#x27;t want my tenants to know I&#x27;m selling?</div>
+                    <div class="faq-label-icon">
+                      <div class="faq-icon-bar"></div>
+                      <div class="faq-icon-bar _2"></div>
+                    </div>
+                  </div>
+                  <nav class="accordion-pane w-dropdown-list">
+                    <p class="faq-accordion-details-text">We can do a discreet home assessment that doesn&#x27;t alert your tenants that you&#x27;re looking to sell. We can also explore options like a temporary lease-back or moving assistance to help make the transition as smooth as possible.</p>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="background-primary color-white">
+        <div class="section-padding">
+          <div class="container-2">
+            <div class="section-inner global-cta">
+              <div data-w-id="a48733c3-7181-a522-679c-c0ef3a88d9ad" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="image-box global-cta"><img loading="lazy" src="images/women.avif" alt=""></div>
+              <div class="content-box global-cta">
+                <div class="margin-bottom-2 margin-60px">
+                  <h2 data-w-id="a48733c3-7181-a522-679c-c0ef3a88d9b1" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="heading-9">Are you looking to buy or rent a property?</h2>
+                </div>
+                <div data-w-id="a48733c3-7181-a522-679c-c0ef3a88d9b3" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="button-container">
+                  <a href="#team" class="button-primary-outline w-inline-block">
+                    <div class="button-box">
+                      <div>Get In Touch</div>
+                      <div class="button-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" viewbox="0 0 20 20" fill="none">
+                          <g clip-path="url(#clip0_0_390)">
+                            <path d="M19.7709 9.44699C19.7706 9.44676 19.7704 9.44648 19.7702 9.44625L15.688 5.38375C15.3821 5.07941 14.8875 5.08054 14.5831 5.3864C14.2787 5.69222 14.2799 6.18687 14.5857 6.49125L17.3265 9.21875H0.78125C0.349766 9.21875 0 9.56851 0 10C0 10.4315 0.349766 10.7812 0.78125 10.7812H17.3264L14.5857 13.5087C14.2799 13.8131 14.2788 14.3078 14.5831 14.6136C14.8875 14.9195 15.3822 14.9205 15.688 14.6162L19.7702 10.5537C19.7704 10.5535 19.7706 10.5532 19.7709 10.553C20.0769 10.2476 20.0759 9.75136 19.7709 9.44699Z" fill="currentColor"></path>
+                          </g>
+                          <defs>
+                            <clippath id="clip0_0_390">
+                              <rect width="20" height="20" fill="currentColor"></rect>
+                            </clippath>
+                          </defs>
+                        </svg></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <main class="main-wrapper">
+        <div class="section_footer">
+          <div class="padding-global-2 padding-section-medium">
+            <div class="container-large-2">
+              <div class="footer_wrap">
+                <div class="footer_top">
+                  <div class="footer_links-wrap">
+                    <a href="#mission" class="footer_link">About Us</a>
+                  </div>
+                  <div class="footer_links-wrap">
+                    <a href="#team" class="footer_link">Contact</a>
+                  </div>
+                  <div class="footer_links-wrap">
+                    <a href="#stats" class="footer_link">Review</a>
+                  </div>
+                  <div class="footer_flex">
+                    <div class="footer_links-wrap">
+                      <a href="#hero-email" class="footer_link">FAQ</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="footer_bottom">
+                  <div class="footer_brand"><img sizes="(max-width: 1024px) 100vw, 1024px" srcset="images/Logo2-p-500.png 500w, images/Logo2-p-800.png 800w, images/Logo2.png 1024w" alt="" src="images/Logo2.png" loading="lazy"></div>
+                  <div class="footer_bottom-mid"></div>
+                  <div class="text-size-small text-align-center">© 2025 GreySlate. All rights reserved.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </footer>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=684fa138a5013c49c6c4e31c" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/gsap.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrollTrigger.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/SplitText.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/InertiaPlugin.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/Draggable.min.js" type="text/javascript"></script>
+  <script src="https://cdn.prod.website-files.com/gsap/3.13.0/ScrambleTextPlugin.min.js" type="text/javascript"></script>
+  <script type="text/javascript">gsap.registerPlugin(ScrollTrigger,SplitText,InertiaPlugin,Draggable,ScrambleTextPlugin);</script>
+  <script>
+
+  // Mapbox Geocoder Setup
+  mapboxgl.accessToken = "pk.eyJ1Ijoidmljb3IiLCJhIjoiY21iaW12M2UxMDdmbTJsc2QwYmZoMWo2ayJ9.hr8BSTdj-DzYrE-l7DEkuA";
+
+  const geocoderContactAddress2 = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    placeholder: "Property Address",
+    autocomplete: true,
+    countries: "us",
+    types: "address"
+  });
+
+  document.getElementById("geocoder-contact-address-2").appendChild(geocoderContactAddress2.onAdd());
+
+  // Create a hidden input to store the geocoder value
+  const hiddenAddressInput = document.createElement('input');
+  hiddenAddressInput.type = 'hidden';
+  hiddenAddressInput.name = 'geocoder-contact-address-2';
+  hiddenAddressInput.id = 'hidden-geocoder-contact-address-2';
+  document.getElementById('contact-form').appendChild(hiddenAddressInput);
+
+  // Store the selected address in the hidden input
+  let selectedAddress = '';
+  geocoderContactAddress2.on("result", (e) => {
+    selectedAddress = e.result.place_name;
+    hiddenAddressInput.value = selectedAddress;
+    console.log('Address selected:', selectedAddress);
+  });
+
+  // Handle form submission
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    const submitButton = this.querySelector('input[type="submit"]');
+
+    // Make sure the address is included in form data
+    if (selectedAddress) {
+      formData.set('geocoder-contact-address-2', selectedAddress);
+    }
+
+    // Convert FormData to URLSearchParams for proper form encoding
+    const params = new URLSearchParams();
+    for (const [key, value] of formData.entries()) {
+      params.append(key, value);
+    }
+
+    // Disable submit button during submission
+    submitButton.disabled = true;
+    submitButton.value = "Sending...";
+
+    // Hide previous messages
+    const successMsg = document.querySelector(".w-form-done");
+    const errorMsg = document.querySelector(".w-form-fail");
+    if (successMsg) successMsg.style.display = "none";
+    if (errorMsg) errorMsg.style.display = "none";
+
+    // Debug: Log what we're sending
+    console.log('Sending form data:', Object.fromEntries(formData.entries()));
+
+    // Send as URL-encoded form data
+    fetch("http://localhost:5000/submit-form", {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: params.toString(),
+    })
+      .then(response => {
+        console.log('Response status:', response.status);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('Success response:', data);
+        if (data.success) {
+          if (successMsg) {
+            successMsg.style.display = "block";
+          } else {
+            alert("Thank you! Your submission has been received!");
+          }
+          // Reset form
+          document.getElementById("contact-form").reset();
+          selectedAddress = '';
+          hiddenAddressInput.value = '';
+          // Clear the geocoder
+          geocoderContactAddress2.clear();
+        } else {
+          throw new Error(data.message || 'Form submission failed');
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        if (errorMsg) {
+          errorMsg.style.display = "block";
+        } else {
+          alert("Oops! Something went wrong while submitting the form.");
+        }
+      })
+      .finally(() => {
+        // Re-enable submit button
+        submitButton.disabled = false;
+        submitButton.value = "GET OFFER NOW";
+      });
+  });
+
+ // register plugins
+ document.addEventListener("DOMContentLoaded", (event) => { gsap.registerPlugin(ScrollTrigger,Draggable,InertiaPlugin,ScrambleTextPlugin,SplitText)
+  //Match media accessibility for reduce motion
+  let mm = gsap.matchMedia();
+  mm.add({
+  isDesktop: "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+  isMobile: "(max-width: 767px) and (prefers-reduced-motion: no-preference)",
+  }, (context)  => {
+    let { isMobile, isDesktop } = context.conditions;
+  // gsap code here! ...
+  // HERO ON LOAD ANIMATION
+  // Hero image scale + fade in
+gsap.fromTo(
+  ".hero_visuals",
+  { scale: 1.05, opacity: 0 },
+  {
+    scale: 1,
+    opacity: 1,
+    duration: 4,
+    ease: "power4.out"
+  }
+);
+  // SPLIT TEXT ANIMATION WITH GSAP SPLITTEXT
+const split = new SplitText(".hero-title", { type: "chars" });
+  // Set initial opacity to 0 for all characters
+gsap.set(split.chars, { opacity: 0 });
+  // Animate characters in
+gsap.to(split.chars, {
+  opacity: 1,
+  duration: 1,
+  stagger: {
+    each: 1 / split.chars.length,
+    from: "random"
+  },
+  ease: "power2.out"
+});
+  // END HERO on load ANIMATION
+  // TEXT FADING IN ANIMATION ON SCROLL
+document.querySelectorAll('[animation-container="text-fade-in"]').forEach(container => {
+  container.querySelectorAll('[animation-element="text-fade-in"]').forEach(el => {
+    const split = new SplitText(el, { type: "words,chars" });
+    const totalChars = split.chars.length;
+    const staggerTime = 1 / totalChars;  // Total duration divided by number of characters for stagger
+    gsap.fromTo(
+      split.chars,
+      { opacity: 0.1 },
+      {
+        opacity: 1,
+        ease: "none",
+        stagger: staggerTime, // Set stagger based on the total time and number of characters
+        duration: 1, // Total duration for all characters
+        scrollTrigger: {
+          trigger: el,
+          start: "top 90%",
+          end: "top 20%",
+          once: true
+        }
+      }
+    );
+  });
+});
+  // END TEXT FADING IN ANIMATION ON SCROLL
+  // MARQUEE
+gsap.to(".marquee_inner-wrapper", {
+  x: isMobile ? "-16vw" : "-8vw",  // matchmedia query for mobile
+  scrollTrigger: {
+    trigger: ".section_vision",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: 0.3,
+    markers: false
+  },
+  transformOrigin: "50% 50%",  // optional: make sure it animates from center
+  force3D: true                // optional: force GPU acceleration
+});
+  // END MARQUEE
+  // VISION PIN/SCRUB ANIMATION
+  // Split the text of the h2 element
+const h2Element = document.querySelector(".vision_overlay-text");
+const splitText = new SplitText(h2Element, { type: "words,chars" });
+const chars = splitText.chars;
+  // Set initial opacity to 0 for all characters
+gsap.set(chars, { opacity: 0 });
+gsap.set(".vision_image-wrapper.is-image-large", {
+  width: isMobile ? "50vw" : "36vw",
+  height: isMobile ? "60vh" : "80vh"
+});
+  // Create a single timeline (no media queries)
+const tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".vision_content-bottom",
+    start: "top top",
+    end: "bottom 60%",
+    scrub: 0.5,
+    pin: true,
+    pinSpacing: true,
+    anticipatePin: 1,
+    markers: false
+  }
+});
+  // Animate the image wrapper and groups
+tl.to(".vision_image-wrapper.is-image-large", {
+  width: "100vw",
+  height: "100vh",
+  borderRadius: "0px",
+  x: isMobile ? "-25vw" : "-32vw", 
+  ease: "power2.inOut"
+}, 0)
+.to(".vision_image-group-left", {
+  x: isMobile ? "-25vw" : "-32vw",
+  ease: "power2.inOut"
+}, 0)
+.to(".vision_image-group-right", {
+  x: isMobile ? "25vw" : "32vw",
+  ease: "power2.inOut"
+}, 0);
+   // Character animation that plays/reverses on scroll (non-scrubbing)
+gsap.timeline({
+  scrollTrigger: {
+    trigger: ".vision_content-bottom",
+    start: "center 48%",
+    end: "bottom bottom",
+    toggleActions: "play none reverse none",
+    markers: false
+  }
+})
+.to(chars, {
+  opacity: 1,
+  duration: 1.5,
+  stagger: {
+    each: 1 / chars.length,
+    from: "random"
+  },
+  ease: "power2.out"
+});
+// Refresh ScrollTrigger on window resize
+window.addEventListener("resize", () => {
+  ScrollTrigger.refresh();
+});
+  // END VISION PIN/SCRUB ANIMATION
+  // TEXT SCRAMBLE INTO VIEW
+  // Animate numbers on scroll using ScrambleText
+document.querySelectorAll('.stats_number').forEach(el => {
+  const finalValue = el.textContent.trim();
+  // Clear the initial value
+  gsap.set(el, { textContent: "0" });
+  // ScrollTrigger to fire when element is in view
+  ScrollTrigger.create({
+    trigger: el,
+    start: "top 80%",
+    once: true,
+    onEnter: () => {
+      gsap.to(el, {
+        duration: 2,
+        scrambleText: {
+          text: finalValue,
+          chars: "0123456789",
+          revealDelay: 0.3
+        },
+        ease: "power2.out"
+      });
+    }
+  });
+});
+  // END TEXT SCRAMBLE INTO VIEW
+  // DRAGGABLE CTA ANIMATION
+document.querySelectorAll('#container-draggable .hand-icon.draggable').forEach((el, index) => {
+  // Set initial opacity and scale using GSAP (no need for random positioning anymore)
+  gsap.set(el, {
+    opacity: 0,  // Start with opacity 0
+    scale: 0.9,  // Start with scale 0.9
+    rotation: gsap.utils.random(-20, 20)  // Optional: add random rotation for variety
+  });
+  // Create timeline for the appearance animation
+  const appearTimeline = gsap.timeline({ paused: true });
+  appearTimeline.to(el, {
+    opacity: 1, // Fade in to opacity 1
+    scale: 1,   // Scale up to normal size
+    rotation: gsap.utils.random(-20, 20), // Random rotation for variety
+    duration: 1, // Duration of the appearance animation
+    ease: "back.out(1.7)" // Bounce ease for that small bounce effect
+  });
+  // ScrollTrigger to start the animation when the container comes into view
+  ScrollTrigger.create({
+    trigger: el,
+    start: "top 80%",
+    once: true,
+    onEnter: () => {
+      gsap.delayedCall(index * 0.2, () => { // Staggered start for each element
+        appearTimeline.play();
+      });
+      // Re-enable Draggable after the animation starts
+      Draggable.create(el, {
+        bounds: "#container-draggable",
+        inertia: true,
+        type: "x,y",
+        edgeResistance: 0.65,
+        throwProps: true,
+        zIndexBoost: false
+      });
+    }
+  });
+});
+  // END DRAGGABLE CTA ANIMATION
+  // END matchMedia
+  })
+  // end gsap code...
+ });
+</script>
+</body>
+</html>
