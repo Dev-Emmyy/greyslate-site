@@ -4,9 +4,10 @@ const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const path = require("path");
 const cors = require("cors");
+const { google } = require("googleapis");
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // CORS configuration
 app.use(cors({
@@ -16,17 +17,17 @@ app.use(cors({
   credentials: true
 }));
 
-// Body parser middleware - increased limit and better configuration
+// Body parser middleware
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
 
-// Add middleware to log all requests
+// Log all requests
 app.use((req, res, next) => {
-    console.log(`${req.method} ${req.path}`, req.headers['content-type']);
-    next();
+  console.log(`${req.method} ${req.path}`, req.headers['content-type']);
+  next();
 });
 
-// Email transporter (CORRECTED: createTransport, not createTransporter)
+// Email transporter
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -35,40 +36,53 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-// Test email configuration on startup
-transporter.verify(function (error, success) {
+transporter.verify((error, success) => {
   if (error) {
-    console.log('Email configuration error:', error);
+    console.log('Email config error:', error);
   } else {
-    console.log('Email server is ready to send messages');
+    console.log('Email server is ready');
   }
 });
 
-// Form submission endpoint
+// Google Sheets setup
+const credentials = require("./google-credentials.json");
+const auth = new google.auth.GoogleAuth({
+  credentials,
+  scopes: ["https://www.googleapis.com/auth/spreadsheets"],
+});
+
+async function appendToSheet({ name, email, phone, address, message }) {
+  const client = await auth.getClient();
+  const sheets = google.sheets({ version: "v4", auth: client });
+
+  const response = await sheets.spreadsheets.values.append({
+    spreadsheetId: process.env.SPREADSHEET_ID,
+    range: "Sheet1!A:F", // Change sheet name or range if needed
+    valueInputOption: "USER_ENTERED",
+    requestBody: {
+      values: [[
+        new Date().toLocaleString(),
+        name,
+        phone,
+        email,
+        address || 'Not provided',
+        message || 'No reason provided',
+      ]],
+    },
+  });
+
+  console.log("Spreadsheet updated:", response.statusText);
+}
+
+// Form submission route
 app.post("/submit-form", async (req, res) => {
   try {
-    console.log('Request Content-Type:', req.headers['content-type']);
-    console.log('Raw form data received:', req.body);
-    console.log('Request body keys:', Object.keys(req.body || {}));
-    
-    // Handle case where req.body might be undefined
-    if (!req.body || Object.keys(req.body).length === 0) {
-      console.log('No form data received');
-      return res.status(400).json({
-        success: false,
-        message: "No form data received."
-      });
-    }
-    
     const name = req.body["contact-name-2"];
     const email = req.body["contact-email-2"];
     const phone = req.body["contact-phone-2"];
     const address = req.body["geocoder-contact-address-2"];
     const message = req.body["contact-message-2"];
-    
-    console.log('Parsed form data:', { name, email, phone, address, message });
 
-    // Validate required fields
     if (!name || !email || !phone) {
       return res.status(400).json({
         success: false,
@@ -90,26 +104,29 @@ app.post("/submit-form", async (req, res) => {
         <p><strong>Reason for Selling:</strong> "${message || 'No reason provided'}"</p>
       `,
       text: `
-      🚨 New Seller Lead Submitted – [${name}, ${address || 'Location Not Provided'}]
-      Name: ${name}
-      Phone: ${phone}
-      Email: ${email}
-      Property Address: ${address || 'Not provided'}
-      Reason for Selling: "${message || 'No reason provided'}"
+        🚨 New Seller Lead Submitted – [${name}, ${address || 'Location Not Provided'}]
+        Name: ${name}
+        Phone: ${phone}
+        Email: ${email}
+        Property Address: ${address || 'Not provided'}
+        Reason for Selling: "${message || 'No reason provided'}"
       `
     };
 
     // Send email
     const info = await transporter.sendMail(mailOptions);
-    console.log("Email sent successfully:", info.response);
-    
+    console.log("Email sent:", info.response);
+
+    // Append to spreadsheet
+    await appendToSheet({ name, email, phone, address, message });
+
     res.status(200).json({
       success: true,
       message: "Thank you! Your submission has been received!"
     });
 
   } catch (error) {
-    console.error("Error processing form submission:", error);
+    console.error("Submission error:", error);
     res.status(500).json({
       success: false,
       message: "Something went wrong. Please try again later."
@@ -120,12 +137,12 @@ app.post("/submit-form", async (req, res) => {
 // Serve static files
 app.use(express.static(path.join(__dirname)));
 
-// Health check endpoint
-app.get('/health', (req, res) => {
-  res.json({ status: 'Server is running' });
+// Health check
+app.get("/health", (req, res) => {
+  res.json({ status: "Server is running" });
 });
 
-// Start the server
+// Start server
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
