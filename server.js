@@ -80,21 +80,22 @@ app.post("/submit-form", async (req, res) => {
       from: process.env.GM_USER,
       replyTo: email,
       to: "office@clearskyservices.co",
-      subject: `New Contact for a free consultation from: ${name}`,
+      subject: `🚨 New Seller Lead Submitted – [${name}, ${address || 'Location Not Provided'}]`,
       html: `
-        <h3>New Contact Form Submission</h3>
+        <h3>🚨 New Seller Lead Submitted</h3>
         <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
         <p><strong>Phone:</strong> ${phone}</p>
-        <p><strong>Address:</strong> ${address || 'Not provided'}</p>
-        <p><strong>Message:</strong> ${message || 'No message provided'}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Property Address:</strong> ${address || 'Not provided'}</p>
+        <p><strong>Reason for Selling:</strong> "${message || 'No reason provided'}"</p>
       `,
       text: `
-        Name: ${name}
-        Email: ${email}
-        Phone: ${phone}
-        Address: ${address || 'Not provided'}
-        Message: ${message || 'No message provided'}
+      🚨 New Seller Lead Submitted – [${name}, ${address || 'Location Not Provided'}]
+      Name: ${name}
+      Phone: ${phone}
+      Email: ${email}
+      Property Address: ${address || 'Not provided'}
+      Reason for Selling: "${message || 'No reason provided'}"
       `
     };
 
